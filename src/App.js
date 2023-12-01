@@ -6,21 +6,30 @@ import BankLogin from './components/BankLogin';
 import Loader from './components/Loader';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
+import Logout from './modal/Logout';
+import RequireAuth from './components/RequireAuth';
+import Homepage from './components/Homepage';
 
 function App() {
   return (
+    <>
+      {/* <Logout /> */}
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Layout />} >
 
-    <Router>
-      <Routes>
-        <Route exact path='/' element={<Layout />} >
-          <Route exact path='/' element={<Login />} >
-            <Route index element={<UserLogin />} />
-            <Route path='banklogin' element={<BankLogin />} />
-            <Route path='userlogin' element={<UserLogin />} />
+            <Route exact path='login' element={<Login />} >
+              <Route index element={<UserLogin />} />
+            </Route>
+
+            <Route element={<RequireAuth />}>
+              <Route path='/' element={<Homepage />} />
+            </Route>
           </Route>
-        </Route>
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
+      {/* <Homepage /> */}
+    </>
   );
 }
 
