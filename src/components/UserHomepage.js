@@ -8,8 +8,6 @@ const UserHomepage = () => {
 
       <article class="flex flex-col gap-4 rounded-lg border border-gray-100 bg-white p-6">
 
-
-
         <div>
           <strong class="block text-sm font-medium text-gray-500"> Welcome, {localStorage.getItem("name")} </strong>
 
