@@ -56,9 +56,9 @@ const Navbar = () => {
     }
 
     return (
-        <div className='z-50' id='navbarprivate'>
-            <div className="transition translate-y-0 z-30 bg-fix fixed w-full" id='main'>
-                <div className='sm:container relative w-full p-2 px-3 mx-auto bg-fix sm:translate-y-0 bg-cyan-900'>
+        <div className='z-50 ' id='navbarprivate'>
+            <div className="transition bg-cyan-900 translate-y-0 z-30 bg-fix fixed w-full" id='main'>
+                <div className='sm:container relative w-full p-2 px-3 mx-auto bg-fix sm:translate-y-0 '>
 
                     <div className='flex justify-between h-1/2 sm:h-auto'>
 

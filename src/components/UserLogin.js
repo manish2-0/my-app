@@ -39,7 +39,7 @@ const UserLogin = () => {
                     'Content-Type': 'application/json'
                 }
             }).then(response => {
-                console.log(response.data);
+                
                 if (response?.data?.status === false) {
 
                     setloading(false);

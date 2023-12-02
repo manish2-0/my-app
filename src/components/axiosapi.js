@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-//   baseURL: 'https://blp-khatabook-backend.vercel.app', 
-  baseURL: 'http://localhost:8000/', 
+  baseURL: 'https://bank-system-binarynumbers.vercel.app/', 
   headers: { 'Content-Type': 'application/json' },
   withCredentials: true
 });
