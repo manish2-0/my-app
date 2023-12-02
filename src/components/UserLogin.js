@@ -31,7 +31,7 @@ const UserLogin = () => {
     const handlesubmit = async (event) => {
         event.preventDefault();
         setloading(true);
-        console.log(inputs)
+        // console.log(inputs)
 
         try {
             await api.post('login', inputs, {
@@ -39,7 +39,7 @@ const UserLogin = () => {
                     'Content-Type': 'application/json'
                 }
             }).then(response => {
-                
+
                 if (response?.data?.status === false) {
 
                     setloading(false);
@@ -55,11 +55,12 @@ const UserLogin = () => {
                 else {
                     // setadminname(inputs.admin_id)
                     let r = response.data;
-                    // console.log(r)
+                    console.log(r)
                     localStorage.setItem("user_id", r.response.data[0].user_id)
                     localStorage.setItem("name", r.response.data[0].name)
                     localStorage.setItem("email", r.response.data[0].email)
                     localStorage.setItem("category", r.response.data[0].category)
+                    localStorage.setItem("balance", r.response.data[0].balance)
                     setauth(r.response.accessToken);
                     // console.log(response.data);
                     setloading(false);

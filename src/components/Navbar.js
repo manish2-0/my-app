@@ -31,6 +31,7 @@ const Navbar = () => {
                 localStorage.removeItem("name");
                 localStorage.removeItem("email");
                 localStorage.removeItem("category");
+                localStorage.removeItem("balance");
 
                 setloading(false)
                 setauth("");

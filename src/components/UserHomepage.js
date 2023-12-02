@@ -17,7 +17,7 @@ const UserHomepage = () => {
             {
               localStorage.getItem("balance") == 0
                 ? <span class="text-2xl font-medium text-gray-900"> ₹0 </span>
-                : <span class="text-2xl font-medium text-green-900"> ₹{localStorage.getItem("balance")} </span>
+                : <span class="text-2xl font-medium text-green-600"> ₹{localStorage.getItem("balance")} </span>
 
             }
 
