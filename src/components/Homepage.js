@@ -7,7 +7,7 @@ const Homepage = () => {
     return (
         <div className='relative'>
             <Navbar />
-            <div className='pt-16 flex items-center justify-center border'>
+            <div className='pt-16 flex flex-col items-center justify-center'>
                 {
                     localStorage.getItem("category") === "customer"
                         ? <UserHomepage />
