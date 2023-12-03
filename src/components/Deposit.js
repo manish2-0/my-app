@@ -91,9 +91,9 @@ const Deposit = () => {
 
       <div className='min-h-screen flex items-center justify-center bg-login p-4 bg-slate-200'>
 
-        <form onSubmit={handlesubmit} className='relative lg:w-[500px] sm:w-[45%] md:w-[40%] h-[425px] border border-slate-200 sm:border-blue-100 shadow-lg backdrop-blur-md bg-white rounded-lg p-3 md:p-4 logintext'>
+        <form onSubmit={handlesubmit} className='relative lg:w-[500px] mx-4 w-full sm:w-[45%] md:w-[40%] h-[425px] border border-slate-200 sm:border-blue-100 shadow-lg backdrop-blur-md bg-white rounded-lg p-3 md:p-4 logintext'>
 
-          <p className='w-full font-semibold text-center text-5xl pb-6 md:p-6 mt-12 sm:mt-6 mb-3 tracking-wider logintext text-fix'>DEPOSIT</p>
+          <p className='w-full font-semibold text-center text-2xl sm:text-2xl md:text-3xl lg:text-5xl pb-6 md:p-6 mt-12 sm:mt-6 m-3 tracking-wider logintext text-fix'>DEPOSIT</p>
 
           <input
             name="amount"
